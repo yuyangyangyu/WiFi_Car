@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_signal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/signal_value"
+            android:layout_below="@id/signal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="28dp"
+            android:text="信号:-0dB"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/speed"
+            android:layout_toRightOf="@id/signal"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/speed"/>
+        <TextView
+            android:id="@+id/speed_value"
+            android:layout_below="@id/speed"
+            android:layout_marginLeft="313dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="速度:0.00m/s"/>
+        <ImageView
+            android:id="@+id/change_speed"
+            android:layout_toRightOf="@id/speed"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/speed_0"/>
+        <TextView
+            android:id="@+id/gears_value"
+            android:layout_below="@id/change_speed"
+            android:text="0档"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="646dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/Up_Down"
+        android:layout_marginTop="149dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="140dp"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/Up"
+            android:background="@drawable/up"
+            android:layout_marginLeft="35dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+        <Button
+            android:id="@+id/Down"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/Up"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/down"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Left_Right"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="280dp"
+        android:layout_toRightOf="@id/Up_Down"
+        android:layout_width="200dp"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/Left"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/left"/>
+        <Button
+            android:id="@+id/Right"
+            android:layout_toRightOf="@id/Left"
+            android:background="@drawable/right"
+            android:layout_marginLeft="40dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="135dp"
+        android:layout_toRightOf="@id/Up_Down"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/discinnect"/>
+
+
+
+
+</RelativeLayout>
